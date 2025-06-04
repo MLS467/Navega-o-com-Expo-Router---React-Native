@@ -1,0 +1,6 @@
+Typed routes
+O recurso ExpoRouter de Typed Routes fornece sugestões de rotas nomeadas ao digitar, 
+facilitando a navegação. Pode ser ativado ou desativado no app.json.
+O recurso ajuda a evitar erros de digitação e garante o uso de rotas válidas na aplicação.
+É uma ferramenta útil para melhorar a experiência de desenvolvimento e garantir a correta 
+utilização das rotas disponíveis.
