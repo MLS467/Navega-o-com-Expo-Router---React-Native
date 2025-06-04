@@ -1,9 +1,14 @@
+import { Link } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
 const Index = () => {
   return (
     <View style={style.container}>
-      <Text style={style.text}>Hello World</Text>
+      <Text style={style.text}>Entrar</Text>
+      {/* Link é utilizado para navegação entre telas */}
+      <Link href="/signup" style={style.new}>
+        ir para Signup
+      </Link>
     </View>
   );
 };
@@ -18,6 +23,10 @@ const style = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
     color: "#333",
+  },
+  new: {
+    fontSize: 15,
+    fontWeight: "bold",
   },
 });
 
