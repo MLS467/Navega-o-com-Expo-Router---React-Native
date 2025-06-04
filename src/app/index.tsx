@@ -4,8 +4,6 @@ import { StyleSheet, Text, View } from "react-native";
 const Index = () => {
   return (
     <View style={style.container}>
-      <Text style={style.text}>Entrar</Text>
-      {/* Link é utilizado para navegação entre telas */}
       <Link href="/signup" style={style.new}>
         ir para Signup
       </Link>

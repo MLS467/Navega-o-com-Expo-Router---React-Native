@@ -1,10 +1,13 @@
+import { Link } from "expo-router";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 const Signup = () => {
   return (
     <View style={style.container}>
-      <Text style={style.text}>Signup</Text>
+      <Link href="/" style={style.back}>
+        Voltar
+      </Link>
     </View>
   );
 };
@@ -14,7 +17,7 @@ const style = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  text: {
+  back: {
     fontSize: 20,
     color: "red",
     fontWeight: "bold",
