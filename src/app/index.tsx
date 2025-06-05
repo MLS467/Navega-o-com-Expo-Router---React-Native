@@ -1,17 +1,9 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import { router } from "expo-router";
-
+import { Button } from "@/components/Button";
 const Index = () => {
-  const handleRouter = () => {
-    router.navigate("/signup"); // Navigate empilha a rota de signup e permite voltar
-    // router.replace("/signup"); // Replace substitui a rota atual por signup, não permitindo voltar
-  };
-
   return (
     <View style={style.container}>
-      <TouchableOpacity style={style.btn} onPress={handleRouter}>
-        <Text style={style.text}>Criar Conta</Text>
-      </TouchableOpacity>
+      <Button title="Criar Conta" path="/signup" type="primary" />
     </View>
   );
 };
@@ -21,21 +13,6 @@ const style = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-  },
-  btn: {
-    borderRadius: 10,
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-    backgroundColor: "#090909",
-  },
-  text: {
-    fontSize: 20,
-    fontWeight: "bold",
-    color: "#fff",
-  },
-  new: {
-    fontSize: 15,
-    fontWeight: "bold",
   },
 });
 

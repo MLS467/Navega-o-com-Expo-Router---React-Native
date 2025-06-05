@@ -1,21 +1,10 @@
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
-import { router } from "expo-router";
-import { Alert } from "react-native";
-const Signup = () => {
-  const backToHome = () => {
-    if (!router.canGoBack())
-      return Alert.alert(
-        "Erro",
-        "Não é possível voltar para a página inicial."
-      );
-    router.back();
-  };
+import { Button } from "@/components/Button";
 
+const Signup = () => {
   return (
     <View style={style.container}>
-      <TouchableOpacity onPress={backToHome}>
-        <Text>Voltar</Text>
-      </TouchableOpacity>
+      <Button title="Voltar" path="/" type="secondary" />
     </View>
   );
 };
