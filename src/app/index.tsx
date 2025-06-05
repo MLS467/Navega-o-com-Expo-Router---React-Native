@@ -6,10 +6,7 @@ const Index = () => {
     <View style={style.container}>
       <Button title="Criar Conta" path="/signup" type="primary" />
 
-      <Link
-        style={{ color: "#000", paddingTop: 20 }}
-        href={{ pathname: "/signup", params: { name: "Amorzão", id: 4 } }}
-      >
+      <Link style={{ color: "#000", paddingTop: 20 }} href="/produto/22">
         Params
       </Link>
     </View>
