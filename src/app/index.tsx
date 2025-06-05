@@ -3,7 +3,8 @@ import { router } from "expo-router";
 
 const Index = () => {
   const handleRouter = () => {
-    router.navigate("/signup");
+    router.navigate("/signup"); // Navigate empilha a rota de signup e permite voltar
+    // router.replace("/signup"); // Replace substitui a rota atual por signup, não permitindo voltar
   };
 
   return (

@@ -1,8 +1,13 @@
-import { Link } from "expo-router";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { router } from "expo-router";
+import { Alert } from "react-native";
 const Signup = () => {
   const backToHome = () => {
+    if (!router.canGoBack())
+      return Alert.alert(
+        "Erro",
+        "Não é possível voltar para a página inicial."
+      );
     router.back();
   };
 
