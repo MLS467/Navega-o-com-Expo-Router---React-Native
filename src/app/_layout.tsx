@@ -1,16 +1,12 @@
-import { Slot } from "expo-router";
+import { Stack } from "expo-router";
 import React from "react";
 import { StyleSheet, View } from "react-native";
 
 const LayoutRoot = () => {
   return (
-    <>
-      <View style={styles.header}></View>
-      <View style={styles.container}>
-        <Slot />
-      </View>
-      <View style={styles.footer}></View>
-    </>
+    <Stack>
+      <Stack.Screen name="index" options={{ title: "BATATA" }} />
+    </Stack>
   );
 };
 
