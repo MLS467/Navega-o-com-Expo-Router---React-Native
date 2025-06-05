@@ -10,6 +10,7 @@ const LayoutRoot = () => {
         screenOptions={{
           drawerActiveTintColor: "#e91e63",
           drawerInactiveTintColor: "#000",
+          headerShown: false,
         }}
       >
         <Drawer.Screen
