@@ -1,10 +1,9 @@
-import { StyleSheet, View } from "react-native";
-import { Button } from "@/components/Button";
+import { StyleSheet, Text, View } from "react-native";
 
-const Index = () => {
+const Order = () => {
   return (
     <View style={style.container}>
-      <Button title="Entrar" path="/(drawer)" type="primary" />
+      <Text style={{ fontSize: 24, fontWeight: "bold" }}>Order Screen</Text>
     </View>
   );
 };
@@ -27,4 +26,4 @@ const style = StyleSheet.create({
   },
 });
 
-export default Index;
+export default Order;

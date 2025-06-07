@@ -1,10 +1,11 @@
-import { StyleSheet, View } from "react-native";
 import { Button } from "@/components/Button";
+import { StyleSheet, Text, View } from "react-native";
 
-const Index = () => {
+const Products = () => {
   return (
     <View style={style.container}>
-      <Button title="Entrar" path="/(drawer)" type="primary" />
+      <Text style={{ fontSize: 24, fontWeight: "bold" }}>Products Screen</Text>
+      <Button title="Rolex" path="product/47" />
     </View>
   );
 };
@@ -27,4 +28,4 @@ const style = StyleSheet.create({
   },
 });
 
-export default Index;
+export default Products;
